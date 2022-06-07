@@ -12,13 +12,20 @@ function App () {
   }, [])
 
   return (
-    <div className='container mx-auto h-screen bg-neutral-200'>
+    <div className='container mx-auto h-screen'>
       <h1 className='text-slate-900 font-bold text-center'>Topo Dota</h1>
 
-      <div>
+      <div className='mt-5'>
 
         {
-          toposList.map(topo => <TopoCard key={topo.steam32} id={topo.steam32} name={topo.name} />)
+          toposList
+            .map(topo => (
+              <TopoCard
+                key={topo.steam32}
+                id={topo.steam32}
+                name={topo.name}
+              />
+            ))
         }
 
       </div>

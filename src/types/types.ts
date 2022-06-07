@@ -8,4 +8,7 @@ export interface Matches {
   match_id: number
   player_slot: number
   radiant_win: boolean
+  kills: number
+  deaths: number
+  assists: number
 }
