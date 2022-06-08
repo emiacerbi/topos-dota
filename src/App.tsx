@@ -12,10 +12,10 @@ function App () {
   }, [])
 
   return (
-    <div className='container grid place-content-center mx-auto'>
-      <h1 className='mt-10 text-4xl font-bold text-center text-slate-900'>TOPO DOTA</h1>
+    <div className='container grid place-content-center mx-auto h-screen'>
+      <h1 className='-mt-10 text-4xl font-bold text-center text-slate-900'>TOPO DOTA</h1>
 
-      <main className='grid grid-cols-3 gap-5 mt-10'>
+      <main className='grid grid-cols-3 gap-5 place-content-center mt-10'>
 
         {
           toposList
