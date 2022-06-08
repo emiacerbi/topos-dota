@@ -12,10 +12,10 @@ function App () {
   }, [])
 
   return (
-    <div className='container mx-auto h-screen'>
-      <h1 className='text-slate-900 font-bold text-center'>Topo Dota</h1>
+    <div className='container grid place-content-center mx-auto'>
+      <h1 className='mt-10 text-4xl font-bold text-center text-slate-900'>TOPO DOTA</h1>
 
-      <div className='mt-5'>
+      <main className='grid grid-cols-3 gap-5 mt-10'>
 
         {
           toposList
@@ -24,11 +24,12 @@ function App () {
                 key={topo.steam32}
                 id={topo.steam32}
                 name={topo.name}
+                profile={topo.profile}
               />
             ))
         }
 
-      </div>
+      </main>
 
     </div>
   )

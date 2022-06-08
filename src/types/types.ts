@@ -4,6 +4,17 @@ export interface Topo {
   profile: string
 }
 
+export interface User {
+  mmr_estimate: {
+    estimate: number
+  }
+
+  profile: {
+    personaname: string
+    avatarfull: string
+  }
+}
+
 export interface Matches {
   match_id: number
   player_slot: number
